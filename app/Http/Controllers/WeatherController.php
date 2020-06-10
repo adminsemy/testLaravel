@@ -11,8 +11,10 @@ class WeatherController extends Controller
     {
         $apiYandex = new ApiYandexWeather();
         $responseBody = $apiYandex->showWeatherCity('53.2488063', '34.2492743');
+        $city = 'Брянск';
         return view('weather.index', [
-            'responseBody' => $responseBody
+            'responseBody' => $responseBody,
+            'city' => $city
         ]);
     }
 }
