@@ -22,7 +22,7 @@
                         <td>
                             @php($sum=0)
                             @foreach($order->orderProduct as $orderProduct)
-                            @php($sum += $orderProduct->price)
+                            @php($sum += $orderProduct->price * $orderProduct->quantity)
                             @endforeach
                             {{ $sum }}
                         </td>

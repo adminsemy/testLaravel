@@ -8,6 +8,12 @@ class Order extends Model
 {
     protected $table = 'orders';
 
+    protected $fillable = [
+        'client_email',
+        'partner_id',
+        'status'
+    ];
+
     public const STATUS = [
         0 => 'Новый',
         10 => 'Подтвержден',
