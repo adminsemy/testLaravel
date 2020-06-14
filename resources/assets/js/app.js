@@ -15,7 +15,7 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import Order from './components/OrderEdit.vue'
+import Order from './components/Orders/OrderEdit.vue'
 
 const app = new Vue({
     el: '#app',
