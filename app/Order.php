@@ -14,10 +14,14 @@ class Order extends Model
         'status'
     ];
 
+    public const NEW_ORDER = 0;
+    public const CONFIRMED =10;
+    public const COMPLETED = 20;
+
     public const STATUS = [
-        0 => 'Новый',
-        10 => 'Подтвержден',
-        20 => 'Завершен',
+        self::NEW_ORDER => 'Новый',
+        self::CONFIRMED => 'Подтвержден',
+        self::COMPLETED => 'Завершен',
     ];
 
     public function partner()
