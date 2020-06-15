@@ -14,13 +14,17 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+import Vuelidate from 'vuelidate'
 import Order from './components/Orders/OrderEdit.vue'
+import Products from './components/Products/Products.vue'
+
+Vue.use(Vuelidate)
 
 const app = new Vue({
     el: '#app',
     components: {
-        'order-edit' : Order
+        'order-edit': Order,
+        'products': Products
     }
     
 });

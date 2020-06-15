@@ -38,7 +38,7 @@
             :name="'product[' + product.product.id + ']'"
             class="form-control"
             v-model="product.quantity"
-            @input="sumOrder"
+            @blur="sumOrder"
             >
             <span class="invalid-feedback" role="alert">
               <strong></strong>

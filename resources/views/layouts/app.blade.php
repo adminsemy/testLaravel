@@ -34,6 +34,10 @@
                 <a class="navbar-brand" href="{{ route('listOrders') }}">
                     Список заказов
                 </a>
+                </a>
+                <a class="navbar-brand" href="{{ route('products') }}">
+                    Продукты
+                </a>
             </div>
         </nav>
         <main class="py-4">

@@ -18,3 +18,4 @@ Route::get('/weather/{city}', 'WeatherController@show')->name('weather');
 Route::get('/orders', 'OrderController@index')->name('listOrders');
 Route::get('/order/edit/{order}', 'OrderController@edit')->name('order.edit');
 Route::post('/order/update/{order}', 'OrderController@update')->name('order.update');
+Route::get('/product', 'ProductController@index')->name('products');
